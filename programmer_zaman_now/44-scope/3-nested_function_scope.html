@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Function Scope</title>
+</head>
+<body>
+    <script>
+        function fungsi1(){
+            let nama = "Shinta Purnama"; // local scope
+
+            function fungsi2(){ // nested function
+                console.info(nama); // bisa akses local scope
+            }
+
+            fungsi2();
+        }
+
+        fungsi1();
+
+    </script>
+</body>
+</html>

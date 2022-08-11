@@ -1,0 +1,247 @@
+(Program Hello World)
+1. tampilkan kata "Hello World" di browser dan console
+
+(Komentar)
+1. Buatlah sebuah komentar satu baris dan komentar banyak baris
+
+(Tipe Data Number)
+1. Tampilkan di browser satu bilangan bulat & satu bilangan desimal
+
+(Tipe Data Boolean)
+1. Tampilkan di browser 1 data true & 1 data false secara langsung
+2. Tampilkan di browser 1 data true & 1 data false menggunakan kondisi
+
+(Tipe Data String)
+1. Tampilkan di browser nama anda (enter) pekerjaan anda
+2. Buat sebuah variable nama (isi dengan sebuah nama), lalu gabungkan dengan "Hallo, perkenalkan nama saya..."
+3. Terapkan escape sequence sesuai contoh di Kode: Escape sequence
+
+(Variable)
+1. Buat Sebuah Variable nama (awalnya tanpa nilai), lalu isi dengan "Anwar"
+2. ganti isi dari variable nama menjadi "Shinta"
+3. ganti lagi dari variable nama menjadi "Muneeb"
+4. tampilkan di browser variable nama tersebut
+5. Buktikan perbedaan variable let & variable const
+
+(Operator Matematika)
+1. Buatlah masing-masing satu contoh dari Operator Aritmatika : pertambahan, pengurangan, perkalian, pangkat (exponensial), pembagian, dan modulo (sisa bagi)
+2. Buatlah masing-masing satu contoh dari Operator Augmented Assignments : (+= , -= , *= , **= , /= , %=)
+3. Buatlah masing-masing satu contoh dari Operator Unary (- , ++ , --)
+
+(Operator Perbandingan)
+1. Hasilkan true dan false dari berbagai operator perbandingan sbb : (> , < , >= , <= , == , === , != , !==)
+
+(Operator Logika)
+1. Bandingkan 2 buah kondisi yang menghasilkan boolean dengan menggunakan (&& , ||, !)
+
+(Console)
+1. tampilkan data dengan menggunakan console2 sbb : (console.info, console.warn, console.error , console.table)
+
+(String Template)
+1. Implementasikan string template sbb : "Hallo Nama Saya (var nama), alamat saya di (var alamat)
+2. Implementasikan expression / operator perbandingan yang menghasilkan true/false di string template
+3. Implementasikan Multiline string di string template
+
+(Konversi String dan Number)
+1. Contoh Kasus :
+    * Misal ada 2 variable, variable 1 = 10, variable 2 = "5"
+    * Lakukan penjumlahan yang menjadikan hasilnya 15
+2. Konversi jenis-jenis data di bawah ini :
+    * Dari string ke number (bilangan bulat)
+    * Dari string ke number (bilangan pecahan)
+    * Dari string ke number (bilangan bulat dan pecahan)
+    * Dari number ke string
+    * Dari String yang berupa huruf ke number
+3. Contoh Kasus :
+    * Ada 2 buah variable, variable1 = "Hallo", variable2 = 100;
+    * buktikan dengan tampilkan di browser bahwa 2 variable tersebut adalah angka atau bukan angka
+
+(Tipe Data Array)
+1. Buatlah sebuah array kosong, misal array mobil. Lalu masukan isi ke array kosong tersebut, misal : Toyota, Daihatsu, Honda, Datsun & Mitsubishi
+2. Buatlah sebuah array nama hewan dengan isi data 4 hewan, lalu
+    * Tampilkan di browser jumlah data di array hewan tersebut
+    * Tampilkan salah satu hewan dari array hewan tersebut 
+    * Ubah nama hewan ke-3 dari array hewan tersebut
+    * hapus nama hewan ke-2 dari array hewan tersebut
+
+(Tipe Data Object)
+1. Buatlah sebuah object kosong, lalu tambahkan property dan nilai ke dalam object tersebut
+2. Buatlah sebuah object orang, dengan properti nama, jenis kelamin, alamat, umur dan hobi
+
+(If Expression)
+1. Contoh kasus :
+    * Buat sebuah variable nilaiUjian
+    * Jika nilaiUjian diatas atau sama dengan 80, maka tampilkan keterangan sangat baik
+    * Jika nilaiUjian diatas atau sama dengan 60, maka tampilkan keterangan cukup baik
+    * Jika nilaiUjian dibawah 60, maka tampilkan keterangan anda perlu belajar lagi
+
+(Pop Up)
+1. Contoh kasus
+    * Saat browser di refresh/menuju ke halaman tsb, tampilkan pertanyaan "Apakah Anda Ingin Masuk?"
+    * Jika pilih "Cancel", maka tampilkan alert("Selamat Tinggal")
+    * Jika pilih "Ok", maka tampilkan inputan "Siapa Nama Anda"
+    * Setelah user isi nama, maka tampilkan alert(Selamat Datang "Nama Yang Diinput")
+
+(Undefined)
+1. Buat sebuah variable undefined, lalu tampilkan di layar bahwa varible tersebut undefined
+2. Buat sebuah array dengan beberapa nilai, coba panggil data yang tidak ada sehingga menampilkan keterangan undefined
+3. Buat sebuah object dengan beberapa nilai, coba panggil data yang tidak ada sehingga menampilkan keterangan undefined
+
+(NULL)
+1. Buat sebuah variable yang nilainya null, lalu tampilkan di layar
+
+(Switch Expression)
+1. Contoh Kasus :
+    * Buat sebuah variable predikatUjian (nilainya dalam huruf A,B,C,D,E)
+    * Jika A, maka akan tampil "Sangat Baik"
+    * Jika B, maka akan tampil "Baik"
+    * Jika C, maka akan tampil "Cukup Baik"
+    * Jika D, maka akan tampil "Kurang Baik"
+    * Jika E, maka akan tampil "Buruk"
+
+(Operator typeof)
+1. Buat sebuah variable, lalu isi nilainya (berganti-ganti)
+2. lalu buat kondisi 
+    jika tipe nya number, maka tampil di layar number.
+    jika tipe nya string, maka tampil di layar string.
+    jika tipe nya boolean, maka tampil di layar boolean.
+    jika tipe nya object, maka tampil di layar object.
+
+
+(In Operator)
+1. Contoh kasus :
+    * Buat sebuah object person dengan property : firstName, lastName, age
+    * cek apakah firstName ada di dalam object person.
+    * jika ada maka tampilkan true, jika tidak maka tampilkan false
+
+(Ternary Operator)
+1. Contoh kasus :
+    * Buat Sebuah variable nilaiUjian dan masukkan nilainya
+    * Dengan ternary operator buat kondisi, jika nilai lebih dari sama dengan 70 maka tampilkan lulus, jika kurang maka tidak lulus
+
+(Nullish Coalescing Operator)
+1. Contoh kasus :
+    * Buat sebuah parameter bernilai null atau undefined
+    * Dengan menggunakan Nullish Coalescing Operator, jika parameter tersebut bernilai null/undefined, maka tampilkan "Nilainya Default" di browser
+
+(Optional Chaining)
+1. Contoh kasus :
+    * Buat sebuah object kosong, misal "person"
+    * console info : person.address.country , maka ini akan error 
+    * Dengan Optional Chaining, buat agar tidak error
+
+(Falsy dan Truthy)
+1. Contoh kasus :
+    * Buat sebuah parameter dan isi dengan berbagai data (truthy / falsy)
+    * beri pengkondisian IF ELSE, dimana jika data tersebut bernilai true, maka akan tampil "Ini data True", jika false, maka akan tampil "Ini data false"
+
+(Operator Logika di Non Boolean)
+* Impelementasikan contoh penggunaan operator logika di Non Boolean
+
+(For Loop)
+* Buatlah Dengan Perulangan For, angka 1 s/d 100
+
+(While Loop)
+* Buatlah Dengan Perulangan While, angka 1 s/d 100
+
+(Do while Loop)
+* Buatlah Dengan Perulangan Do While, angka 1 s/d 100
+
+(Break & Continue)
+1. Contoh kasus Break
+    * Buat sebuah perulangan angka dari 1 sampai 100 (Dengan for dan while)
+    * Saat angka mencapai 20, perulangan berhenti
+2. Contoh kasus Continue
+    * Dengan menggunakan continue, tampilkan bilangan ganjil diantara 1 s/d 100
+
+(Label)
+* Implementasikan penggunakan label terhadap break & continue sesuai contoh
+
+(For In)
+1. Contoh Kasus :
+    * Buat sebuah object "orang", dengan property : nama, alamat, umur, hobi
+    * tampilkan semua property dan nilai yang ada di object "orang" dengan menggunakan for In
+
+(For Of)
+1. Contoh Kasus 1 :
+    * Buat sebuah array yang isinya beberapa nama mobil
+    * tampilkan di browser semua nama mobil tersebut dengan menggunakan For Of
+2. Contoh Kasus 2 :
+    * Buat sebuah variable yang berisi nama hewan
+    * pecah setiap huruf dari nama hewan tersebut dengan menggunakan For Of
+
+
+(With Statement)
+* Impelementasikan penggunaan with statement sesuai contoh
+
+(Function)
+* Buat sebuah function yang mencetak ke layar "Hello World"
+
+(Function Parameter)
+* Buat sebuah function dengan parameter yang mencetak ke layar Hallo (nama depan) (nama belakang), apa kabar?
+* Buat sebuah function untuk melakukan penjumlahan 2 bilangan dan langsung mencetak ke layar
+
+(Funtion Return Value)
+* Buat sebuah function yang mengembalikan nilai perkalian dari 2 nilai
+* Buat sebuah function yang mengambalikan nilai hasil ujian (dalam huruf) ketika memasukan sebuah angka. contoh, jika memasukan nilai 90 di parameter, maka akan mengembalikan "Baik Sekali"
+* Buat sebuah function yang berisi 2 buah parameter, parameter pertama adalah deret angka (berbentuk array), parameter kedua adalah sebuah angka. function ini berfungsi untuk mengecek apakah parameter kedua (sebuah angka) ada di antara parameter pertama (deret angka), jika ada maka function ini mengembalikan nilai true, jika tidak ada function ini mengembalikan nilai false
+
+(Optional Parameter)
+* Implementasikan Optional Parameter sesuai Contoh
+
+(Default Parameter)
+1. Contoh kasus :
+    * Buat sebuah function dengan default parameter
+    * akses function tersebut tanpa mengisi parameter nya, atau jika ada 2 parameter, isi 1 saja saat mengakses parameter nya
+
+(Rest Parameter)
+1. Contoh kasus :
+    * Buat sebuah function dengan 2 buah parameter
+    * parameter pertama berisi nama product
+    * parameter kedua berisi deret angka
+    * function ini menjumlahkan total angka yang ada di parameter kedua, sehingga kembalian nya menjadi : Nama Barang Jumlah nya ada (Jumlah) Buah
+
+(Spread Syntax)
+1. Contoh kasus :
+    * Buat sebuah data array deret angka di dalam variable
+    * buat sebuah function yang berfungsi untuk men-totalkan nilai array tersebut
+
+(Function sebagai value)
+* Implementasikan function di variable sesuai contoh
+* Implementasikan function di parameter sesuai contoh
+
+(Anonymous Function)
+* Buat sebuah contoh anonymous function di variable
+* Buat sebuah contoh anonymous function di parameter
+
+(Function dalam Function)
+* Buat sebuah contoh function di dalam function, lalu coba akses
+
+(Scope)
+* Global Scope : buat contoh kasus global scope sesuai yang pernah dibuat
+* Local Scope : buat contoh kasus local scope sesuai yang pernah dibuat
+* Nested Function Scope : buat contoh kasus nested function scope sesuai yang pernah dibuat
+
+(Recursive Function)
+* Buat fungsi factorial menggunakan for loop & recursive function
+
+(Function Generator)
+* pahami lebih lanjut tentang function Generator
+* Buat contoh function generator seperti yang telah di buat sebelumnya
+
+(Arrow Function)
+* Buat sebuah arrow function "standar" dengan 1 parameter, fungsinya meng-console output : Hallo (parameter), apa kabar?
+* Buat sebuah arrow function "tanpa block" dengan 1 parameter, fungsinya meng-console output : Pagi (parameter), good luck yang
+* Buat sebuah arrow function "yang mengembalikan nilai" dengan 2 parameter, dimana fungsinya menjumlahkan parameter pertama & parameter kedua
+* Buat sebuah arrow function "yang mengembalikan nilai tanpa block" dengan 2 parameter, dimana fungsinya mengalikan parameter pertama & parameter kedua
+* Buat sebuah arrow function "tanpa kurung parameter" dengan 1 parameter, yang fungsinya meng-console : Hallo (parameter) Have a good day
+* Buatlah contoh arrow function sebagai parameter
+
+(closure)
+* Pahami lagi tentang closure dan buat contoh nya
+
+(Object Method)
+* Buat sebuah object, dengan 2 property : nama (string) dan sayHello (function/method yang meng-console : Hello (parameter) )
+* Buat sebuah object, dengan 1 property : nama (string), lalu tambahkan 1 property lagi yang berupa function/method yang membuat fungsi pengecekan angka ganjil/genap
+
+(Kata Kunci This)

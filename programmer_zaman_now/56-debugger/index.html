@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugger</title>
+</head>
+<body>
+    <script>
+        // Kasus 1
+        function createFullName(firstName, middleName, lastName){
+            const fullName = `${firstName} ${lastName} ${lastName}`;
+            return fullName;
+        }
+
+        console.info(createFullName("Eko", "Kurniawan", "Khannedy"));
+
+
+        // Kasus 2
+        function sum(...numbers){
+            debugger; // debugger membuat kita bisa mengetahui posisi bug
+            let total = 0;
+            for (const number of numbers) {
+                total += number;
+            }
+
+            return total;
+        }
+
+        console.info(sum(4,5,6,7,10));
+    </script>
+</body>
+</html>

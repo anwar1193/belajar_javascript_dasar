@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function</title>
+</head>
+<body>
+    <script>
+        // Anonymous function di dalam variable
+        let say = function(name){
+            document.writeln(`<p>Haii ${name}</p>`);
+        }
+
+        say("Anwar");
+
+        // Anonymous function di dalam parameter
+        function sayHello(params){
+            params("Shinta");
+        }
+
+        sayHello(function(name2){ // ini anonymous function nya dijadikan parameter
+            document.writeln(`Hello ${name2}`);
+        });
+    </script>
+</body>
+</html>

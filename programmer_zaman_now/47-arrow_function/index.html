@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // Arrow Function Standar (Dengan Parameter)
+        const sayHello = (name) => {
+            const say = `Hello ${name}`;
+            console.info(say);
+        }
+        sayHello("Anwar");
+
+        
+        // Arrow Function tanpa block (Jika satu baris)
+        const sayMorning = (name2) => console.info(`Selamat pagi, ${name2}`);
+        sayMorning("Shinta");
+
+
+        // Arrow function return value (dengan block)
+        const penjumlahan = (nilai1, nilai2) => {
+            return nilai1 + nilai2;
+        }
+        console.info(penjumlahan(10, 15));
+
+
+        // Arrow function return value (tanpa block)
+        const perkalian = (value1, value2) => value1 * value2;
+        console.info(perkalian(10,20));
+
+
+        // Arrow function tanpa kurung parameter
+        const sayAfternoon = name3 => console.info(`Selamat Malam, ${name3}`);
+        sayAfternoon("Muneeb");
+
+
+        // Arrow function sebagai parameter
+        function sayEvening(arrowParameter){
+            arrowParameter("Zakiyya");
+        }
+        sayEvening((name4) => console.info(`Selamat Malam, ${name4}`));
+        
+    </script>
+</body>
+</html>

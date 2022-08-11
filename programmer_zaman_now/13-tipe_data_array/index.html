@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+
+        let arrayKosong = []; // Membuat Array Kosong
+        let arrayNama = ["Anwar", "Shinta", "Muneeb", "Kia"]; // Array Dengan Data
+
+        console.table(arrayNama); // Menampilkan data array keseluruhan di console, refresh kembali jika blm berbentuk table
+
+        arrayNama.push("Hana", "Rani"); // Menambahkan Data Array
+ 
+        console.table(arrayNama); // Menampilkan data array keseluruhan di console, refresh kembali jika blm berbentuk table
+
+        console.info('Panjang Array : ' + arrayNama.length); // Menampilkan Panjang Array
+    
+        console.info('Data ke-2 di array adalah : ' + arrayNama[1]); // Menampilkan data array dari index tertentu
+
+        arrayNama[3] = "Zakiyya"; // Mengubah data array index ke-3 menjadi Zakiyya
+
+        console.table(arrayNama);
+
+        delete arrayNama[3]; // menghapus data array ke-3, tapi indexnya/tempatnya tetap ada
+
+        console.table(arrayNama);
+
+
+    </script>
+</body>
+</html>

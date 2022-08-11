@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Const</title>
+</head>
+<body>
+    <script>
+
+        // Selain let, ada variable yang disarankan juga yaitu const
+        // Perbedaan nya, let bisa diubah/ditulis berkali-kali, sedangkan const hanya bisa di isi nilai 1x
+
+        const fullName = "Munawar Ahmad";
+        const firstName = "Munawar";
+        const lastName = "Ahmad";
+
+        // Jika script di bawah dihidupkan maka akan error (bisa dilihat di console)
+        // fullName = "Shinta Purnama";
+
+        document.writeln("Nama Lengkap Saya " + fullName);
+        document.writeln("<br>");
+        document.writeln("Nama Depan Saya " + firstName);
+        document.writeln("<br>");
+        document.writeln("Nama Belakang Saya " + lastName);
+    </script>
+</body>
+</html>

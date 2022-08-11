@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    <script>
+        function sum(nama, ...angka){
+            let total = 0;
+            for(let i of angka){
+                total += i;
+            }
+            document.writeln(`<p>${nama} jumlahnya ada : ${total}</p>`);
+        }
+
+        sum("Nangka", 10, 12, 15, 9, 5); // Dengan Rest Parameter Biasa, Jika Datanya berupa nilai2
+
+        let nilai = [12, 11, 45, 21, 10];
+        sum("Durian", ...nilai); // Dengan Spread Syntax, Jika data yang dikirim berupa array
+    </script>
+</body>
+</html>

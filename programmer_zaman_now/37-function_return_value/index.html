@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    <script>
+        // Function Return 1 Data
+        function sayHello(firstName, lastName){
+            let say = `<p>Hello ${firstName} ${lastName}, Apa Kabar?</p>`;
+            return say;
+        }
+
+        let result = sayHello("Munawar", "Ahmad");
+        document.writeln(result);
+
+
+        // Function Return Lebih dari 1 Data
+        function nilaiUjian(nilai){
+            if(nilai > 90){
+                return "Selamat, Nilai Anda A";
+            }else if(nilai > 80){
+                return "Nilai Anda B, Good Job";
+            }else if(nilai > 70){
+                return "Nilai Anda C, Belajar Lagi";
+            }else if(nilai > 60){
+                return "Nilai Anda D, Coba Lagi Tahun Depan";
+            }else{
+                return "Nilai Anda E, Parah";
+            }
+        }
+
+        let hasilNilai = nilaiUjian(77);
+        document.writeln(hasilNilai);
+
+
+        // Menghentikan Eksekusi Program Dengan Return, Kasus : mencari sebuah angka di antara data array
+        function dataTersedia(array, dataDicari){
+            for(let data of array){
+                if(data === dataDicari){
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        let deretAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let angkaDicari = 7;
+
+        let hasilTersedia = dataTersedia(deretAngka, angkaDicari);
+        document.writeln(`<p>${hasilTersedia}</p>`);
+    </script>
+</body>
+</html>

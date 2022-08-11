@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <!-- Kalo di PHP menggunakan array asosiatif, maka di javascript menggunakan object -->
+    <script>
+        const orang = {}; // membuat object kosong
+
+        const hewan = { // membuat object dengan isi data
+            nama: "Singa",
+            jumlah_kaki: 4,
+            makanan: "daging"
+        };
+
+        console.table(hewan); // menampilkan data object (keseluruhan)
+
+        // menambah/mengubah data object
+        orang["nama"] = "Munawar Ahmad";
+        orang["alamat"] = "Ciseeng";
+        orang["umur"] = 28;
+
+        console.table(orang); 
+
+        // Menghapus data object
+        delete orang["umur"];
+
+        console.table(orang);
+
+        // Menampilkan salah satu data pada object
+        console.info(`${hewan.nama} memiliki ${hewan.jumlah_kaki} kaki, dia adalah pemakan ${hewan.makanan}`);
+    </script>
+</body>
+</html>

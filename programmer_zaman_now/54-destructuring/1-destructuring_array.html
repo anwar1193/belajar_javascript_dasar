@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Array</title>
+</head>
+<body>
+    <script>
+        const person = ["Anwar", "Shinta", "Muneeb", "Kiyya", "Hana", "Rani"];
+
+        // Pengambilan Data Array Biasa
+        // let ketua = person[0];
+        // let wakil = person[1];
+        // let sekretaris = person[2];
+        // let bendahara = person[3];
+
+        // Pengambilan Data Array Dengan Destructuring
+        const [ketua, wakil, sekretaris, bendahara, ...other] = person;
+
+        console.info(ketua);
+        console.info(wakil);
+        console.info(sekretaris);
+        console.info(bendahara);
+        console.info(other);
+
+    </script>
+</body>
+</html>

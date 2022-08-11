@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <script>
+        let orang = {};
+
+        // document.writeln(orang.alamat.negara); 
+        // saat kita coba akses object di dalam object yang nilainya undefined seperti diatas, maka hasilnya akan error (bisa di cek di console)
+
+        // mengatasi error tsb dengan if
+        // let negara;
+        // if(orang.alamat !== undefined && orang.alamat !== null){
+        //     negara = orang.alamat.negara;
+        // }
+
+        // document.writeln(negara); // berhasil akses undefined (tidak error) dengan menggunakan IF
+
+        // mengatasi error tsb dengan optional chaining
+        document.writeln(orang?.alamat?.negara); // berhasil akses undefined (tidak error) dengan menggunakan optional chaining
+
+    </script>
+</body>
+</html>

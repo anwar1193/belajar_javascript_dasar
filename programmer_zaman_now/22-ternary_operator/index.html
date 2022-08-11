@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <script>
+        let nilai_ujian = 70;
+        let ucapan;
+
+        // Dengan Menggunakan IF
+        // if(nilai_ujian > 80){
+        //     ucapan = "Selamat Anda Lulus";
+        // }else{
+        //     ucapan = "Anda Tidak Lulus";
+        // }
+
+        // Dengan Menggunakan Ternary Operator
+        ucapan = nilai_ujian > 80 ? "Selamat Anda Lulus" : "Anda Tidak Lulus";
+
+        document.writeln(`<p>${ucapan}</p>`);
+    </script>
+</body>
+</html>

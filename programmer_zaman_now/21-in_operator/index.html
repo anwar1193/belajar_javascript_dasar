@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+    <script>
+        let orang = {
+            nama: "Munawar Ahmad",
+            alamat: "Ciseeng",
+            ttl: "Lahat, 11 November 1993",
+            umur: undefined
+        }
+
+        let cek1 = "nama" in orang; // true
+        let cek2 = "nomorHP" in orang; // false
+        let cek3 = "umur" in orang; // true
+
+        document.writeln(`<p>property nama ada di dalam object orang, hasilnya = ${cek1}</p>`);
+        document.writeln(`<p>property nomorHP ada di dalam object orang, hasilnya = ${cek2}</p>`);
+        document.writeln(`<p>property umur ada di dalam object orang, hasilnya = ${cek3}</p>`); // tidak peduli nilainya apapun (walaupun undefined/null), selama property nya ada maka akan tetap dianggap ada/true
+    
+
+        let hewan = ["Singa", "Sapi", "Kambing", null, undefined];
+
+        let cek4 = 1 in hewan; // true
+        let cek5 = 3 in hewan; // true
+        let cek6 = 5 in hewan; // false
+
+        document.writeln(`<p>index ke-1 ada di array hewan, hasilnya = ${cek4}</p>`);
+        document.writeln(`<p>index ke-3 ada di array hewan, hasilnya = ${cek5}</p>`);
+        document.writeln(`<p>index ke-5 ada di array hewan, hasilnya = ${cek6}</p>`);
+        
+    </script>
+</body>
+</html>

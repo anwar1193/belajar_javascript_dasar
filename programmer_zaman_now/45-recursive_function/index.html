@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Function</title>
+</head>
+<body>
+    <script>
+        // Contoh Factorial Dengan Loop For
+        function factorialWithLoop(value){
+            let result = 1;
+
+            for(let i=1 ; i<=value ; i++){
+                result *= i;
+            }
+
+            return result;
+        }
+
+        console.info(factorialWithLoop(5)); // sama dengan 5 * 4 * 3 * 2 * 1
+
+
+        // Contoh Factorial Dengan Recursive Function
+        function factorialWithRecursive(value){
+            if(value === 1){
+                return 1;
+            }else{
+                return value * factorialWithRecursive(value - 1);
+            }
+        }
+
+        console.info(factorialWithRecursive(5));
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String Dan Number</title>
+</head>
+<body>
+    
+    <script>
+        // Masalah Tanpa Konversi
+        const nilai1 = 1;
+        const nilai2 = "1";
+        const sum = nilai1 + nilai2; // Hasilnya akan 11
+        document.writeln(`<p>Hasil Dari 1 + (string) 1 adalah ${sum} </p>`);
+
+        // Setelah Konversi
+        nilai2Baru = parseInt(nilai2);
+        const sum2 = nilai1 + nilai2Baru; // Hasilnya akan 2
+        document.writeln(`<p> Hasil Dari 1 + 1 adalah ${sum2} </p>`);
+
+        // Macam2 Konversi String ke Number
+        const nilaiAwalString = "1.5";
+        const nilaiParseInt = parseInt(nilaiAwalString); // Hasilnya akan 1
+        const nilaiParseFloat = parseFloat(nilaiAwalString); // Hasilnya akan 1.5
+        const nilaiNumber = Number(nilaiAwalString); // Hasilnya akan 1.5
+        document.writeln(`<p>Nilai Awal (String) = ${nilaiAwalString}</p>`);
+        document.writeln(`<p>&nbsp; Di Parse Int Menjadi (number) = ${nilaiParseInt}</p>`);
+        document.writeln(`<p>&nbsp; Di Parse Float Menjadi (number) = ${nilaiParseFloat}</p>`);
+        document.writeln(`<p>&nbsp; Di Number menjadi (number) = ${nilaiNumber}</p>`);
+
+        // NaN (Not a Number)
+        const nilai3 = "salah";
+        const nilai4 = "1Text";
+        const nilai5 = "botol";
+        const nilai6 = "2.5Text";
+        document.writeln(`<p>${nilai3} jika di parseInt menjadi : ${parseInt(nilai3)}</p>`);
+        document.writeln(`<p>${nilai4} jika di parseInt menjadi : ${parseInt(nilai4)}</p>`); // parseInt mentolerir NaN selama di depan itu angka
+        document.writeln(`<p>${nilai5} jika di parseFloat menjadi : ${parseFloat(nilai5)}</p>`);
+        document.writeln(`<p>${nilai6} jika di parseFloat menjadi : ${parseFloat(nilai6)}</p>`); // parseFloat juga mentolerir NaN selama di depan itu angka
+        document.writeln(`<p>${nilai6} jika di Number menjadi : ${Number(nilai6)}</p>`); // Number tidak mentolerir NaN
+    
+        // NaN jika dioperasikan dengan tipe data apapun akan menjadi NaN
+        const nilai7 = parseInt(nilai3);
+        const nilai8 = 100 + nilai7;
+        const nilai9 = 50;
+        document.writeln(`${nilai7} + 100 = ${nilai8}`);
+
+        // isNaN : untuk mengetahui sebuah nilai Number atau Not a Number
+        document.writeln(`<p>${nilai3} jika di isNaN hasilnya ${isNaN(nilai3)}</p>`);
+        document.writeln(`<p>${nilai9} jika di isNaN hasilnya ${isNaN(nilai9)}</p>`);
+    
+    </script>
+
+</body>
+</html>

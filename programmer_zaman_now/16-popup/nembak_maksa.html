@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nembak Maksa</title>
+</head>
+<body>
+    <script>
+
+        alert("Selamat Datang Di Aplikasi Maksa Jadi Pacarku !!!")
+
+        const nama = prompt("Nama Kamu Siapa?");
+
+        const tembak = confirm(`${nama} , Maukah Jadi Pacarku?`);
+
+        if(tembak){
+            alert("Sip, Sekarang Kita Jadian Yaaa");
+        }else{
+            harus_diterima();
+        }
+
+        function harus_diterima(){
+            const tembak_lagi = confirm(`${nama} , Pokoknya kamu harus mau !!! Klik Yessss`);
+
+            if(tembak_lagi){
+                alert("Sip, Sekarang Kita Jadian Yaaa");
+            }else{
+                harus_diterima2();
+            }
+        }
+
+        function harus_diterima2(){
+            const tembak_lagi2 = confirm(`${nama} , Kok Kamu Ngeyel Sih? Klik Yeeeees woooi`);
+
+            if(tembak_lagi2){
+                alert("Sip, Sekarang Kita Jadian Yaaa");
+            }else{
+                harus_diterima();
+            }
+        }
+    </script>
+</body>
+</html>

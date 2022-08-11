@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In</title>
+</head>
+<body>
+    <script>
+        
+        const orang = {
+            firstName: "Munawar",
+            lastName: "Ahmad"
+        }
+
+        // For In Untuk Object
+        for(let property in orang){
+            document.writeln(`<p>${property} : ${orang[property]}</p>`);
+        }
+
+        const orang2 = ["Anwar", "Shinta", "Muneeb", "Kia"];
+
+        // For In untuk Array
+        for(let property2 in orang2){
+            document.writeln(`<p>${property2} : ${orang2[property2]}</p>`);
+        }
+        
+    </script>
+</body>
+</html>

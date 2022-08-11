@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Object</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "Munawar",
+            lastName: "Ahmad",
+            address: {
+                street: "Perum BPV",
+                city: "Bogor",
+                country: "Indonesia"
+            },
+            hobby: "Game",
+            channel: "SBXperience"
+        };
+
+        // Pengambilan Data Object Biasa
+        // let firstName = person.firstName;
+        // let lastName = person.lastName;
+
+        const {firstName, lastName, address:{street, city, country}, ...others} = person;
+
+        console.info(firstName);
+        console.info(lastName);
+        console.info(street);
+        console.info(city);
+        console.info(country);
+        console.info(others);
+    </script>
+</body>
+</html>

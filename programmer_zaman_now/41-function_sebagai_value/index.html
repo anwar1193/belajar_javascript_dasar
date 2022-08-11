@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Sebagai Value</title>
+</head>
+<body>
+    <script>
+        function sayHello(name){
+            document.writeln(`<p>Hello ${name}</p>`);
+        }
+
+        sayHello("Anwar");
+
+        let say = sayHello; // contoh function di taro di variable
+
+        say("Shinta"); // ini sama dengan sayHello("Shinta")
+
+        function sayHello2(name2){
+            name2("Muneeb");
+        }
+
+        sayHello2(sayHello); // ini sama dengan sayHello(Muneeb) -- function sebagai parameter
+        sayHello2(say);  // ini juga sama dengan sayHello(Muneeb) -- function sebagai parameter
+    </script>
+</body>
+</html>

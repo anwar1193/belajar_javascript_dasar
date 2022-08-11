@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator</title>
+</head>
+<body>
+    <script>
+        // Contoh function generator sederhana (menampilkan nama)
+        function* tampil_nama(){
+            yield "Munawar";
+            yield "Ahmad";
+        }
+
+        const names = tampil_nama();
+
+        for (const name of names) {
+            console.info(name);
+        }
+
+
+        // contoh function generator kompleks (generate angka ganjil)
+        function* buatGanjil(value){
+            for(let i=1; i<=value; i++){
+                if(i % 2 === 1){
+                    yield i;
+                }
+            }
+        }
+
+        const angkaGanjil = buatGanjil(100);
+
+        // Memanggil hasil function generator dengan perulangan
+        for (const ganjil of angkaGanjil) {
+            console.info(ganjil);
+        }
+
+        // Memanggil hasil function generator satu per satu, matikan dulu perulangan di atas
+        // console.info(angkaGanjil.next().value);
+        // console.info(angkaGanjil.next().value);
+        // console.info(angkaGanjil.next().value);
+    </script>
+</body>
+</html>

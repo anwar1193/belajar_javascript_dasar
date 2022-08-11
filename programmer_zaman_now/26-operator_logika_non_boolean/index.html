@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+    <script>
+        // Operator ||
+        console.info("Hello" || ""); // Kiri Truthy, Kanan Falsy, yang tampil Truthy Kiri ("Hello")
+        console.info("" || []); // Kiri Falsy, Kanan Truthy, yang tampil Truthy Kanan ([])
+        console.info("0" || "NOL"); // Kiri Truthy, Kanan Truthy, yang tampil Truthy Kiri ("0")
+        console.info(null || "NULL"); // Kiri Falsy, Kanan Truthy, yang tampil Truthy Kanan ("NULL")
+        console.info(undefined || "UNDEFINED"); // Kiri Falsy, Kanan Truthy, yang tampil Truthy Kanan ("UNDEFINED")
+        console.info(0 || false); // Kiri Falsy, Kanan Falsy, yang tampil Falsy Kanan (false)
+
+        // Contoh implementasi :
+        const person = {
+            firstName: "",
+            lastName: "Ahmad"
+        }
+        const name = person.firstName || person.lastName;
+        console.info(`Nama yang tampil : ${name}`);
+
+
+        // Operator AND (&&)
+        console.info("hello" && ''); // kiri Truthy, kanan falsy, yang tampil Falsy Kanan ('')
+        console.info("" && []); // kiri Falsy, kanan Truthy, yang tampil Falsy Kiri ("")
+        console.info("0" && "NOL"); // kiri Truthy, kanan Truthy, yang tampil Truthy Kanan ("NOL")
+        console.info(0 && "NOL"); // kiri Falsy, kanan Truthy, yang tampil Falsy Kiri (0)
+        console.info(null && "NULL"); // kiri Falsy, kanan Truthy, yang tampil Falsy Kiri (null)
+        console.info(undefined && "UNDEFINED"); // kiri Falsy, kanan Truthy, yang tampil Falsy Kiri (undefined)
+        console.info("undefined" && "null"); // kiri Truthy, kanan Truthy, yang tampil Truthy kanan ("null")
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Kunci This</title>
+</head>
+<body>
+    <script>
+        // This di Global Scope
+        console.info(this);
+
+        // This di Function
+        function testThis(){
+            console.info(this);
+        }
+
+        testThis();
+
+        // This di Object Method
+        let person = {
+            myName: "Anwar",
+            sayHello: function(herName){
+                console.info(`Hi ${herName}, My Name is ${this.myName}`);
+            }
+        }
+
+        person.sayHello("Shinta");
+        
+    </script>
+</body>
+</html>
